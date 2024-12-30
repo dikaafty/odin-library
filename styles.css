@@ -38,6 +38,11 @@ img {
   --text-color: #eaeaea;
 }
 
+::selection {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+
 body {
   background-color: var(--primary-color);
   color: var(--text-color);
