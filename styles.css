@@ -28,3 +28,12 @@ img {
 }
 
 /* Normalize and Reset CSS End */
+
+:root {
+  --primary-color: #121212;
+  --secondary-color: #1f1d1d;
+  --tertiary-color: #2b2a2a;
+  --shadow-color: #242424;
+  --accent-color: #1e90ff;
+  --text-color: #eaeaea;
+}
