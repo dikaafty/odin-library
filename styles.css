@@ -63,7 +63,10 @@ img {
 
 body {
   font-family: "robotoregular";
-  background-color: var(--primary-color);
+  background: linear-gradient(#3a1500, #121212);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   color: var(--text-color);
 }
 
@@ -79,6 +82,7 @@ header {
   height: 95px;
   box-sizing: border-box;
   padding: 0 20px;
+  background-color: var(--primary-color);
 
   display: flex;
   justify-content: space-between;
