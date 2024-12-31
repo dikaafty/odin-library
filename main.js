@@ -7,5 +7,8 @@ const info = document.querySelector(".information");
 // On mount
 
 // Handlers
+handleInfoToggle = () => {
+  info.classList.toggle("hide");
+}
 
 // Events
