@@ -130,7 +130,7 @@ header {
   top: 90px;
   right: 0px;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
