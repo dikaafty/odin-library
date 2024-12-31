@@ -161,6 +161,14 @@ header {
   align-items: center;
 }
 
+.author-container img {
+  transition: all 200ms ease-in-out;
+}
+
+.author-container img:hover {
+  transform: scale(1.1);
+}
+
 .hide {
   display: none;
 }
