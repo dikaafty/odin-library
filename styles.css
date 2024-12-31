@@ -160,4 +160,8 @@ header {
   align-items: center;
 }
 
+.hide {
+  display: none;
+}
+
 /* Information Section Styling Emd */
