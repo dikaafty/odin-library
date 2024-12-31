@@ -110,6 +110,7 @@ header {
   border: 10px solid var(--secondary-color);
   filter: grayscale(100%);
   transition: all 200ms ease-in-out;
+  cursor: pointer;
 }
 
 .user-container img:hover {
