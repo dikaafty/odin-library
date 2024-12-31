@@ -118,3 +118,46 @@ header {
 }
 
 /* Header Styling End */
+
+
+/* Information Section Styling Start */
+
+.information {
+  width: 325px;
+  background-color: rgba(31, 29, 29, 0.7);
+  border-radius: 10px;
+  position: absolute;
+  top: 90px;
+  right: 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information h1 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.stats-container {
+  width: 80%;
+  box-sizing: border-box;
+  border-top: 2px solid var(--text-color);
+  border-bottom: 2px solid var(--text-color);
+  margin: 20px 0px 0px;
+  padding: 10px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.author-container {
+  width: 200px;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Information Section Styling Emd */
