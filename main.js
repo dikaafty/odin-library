@@ -12,3 +12,4 @@ handleInfoToggle = () => {
 }
 
 // Events
+user.addEventListener("click", handleInfoToggle);
