@@ -153,6 +153,14 @@ header {
   line-height: 30px;
 }
 
+.total-book,
+.total-completed-book,
+.total-pages,
+.total-completed-pages {
+  display: flex;
+  justify-content: space-between;
+}
+
 .author-container {
   width: 200px;
   height: 90px;
