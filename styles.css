@@ -191,10 +191,11 @@ header {
 
 main {
   box-sizing: border-box;
-  margin: 30px;
+  margin: 45px 30px;
 
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
 }
 
 .add-btn,
