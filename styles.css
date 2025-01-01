@@ -229,4 +229,19 @@ main {
   transform: rotate(180deg) translateY(-10px);
 }
 
+dialog {
+  width: 600px;
+  height: 99vh;
+  background-color: rgba(44, 44, 44, 0.8);
+  color: var(--text-color);
+  box-shadow: 0 0 10px #3a1500, 0 0 20PX #4b1b00;
+  border: none;
+  border-radius: 20px;
+
+  position: absolute;
+  top: 2.5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* Main Styling End */
