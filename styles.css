@@ -82,7 +82,7 @@ header {
   height: 95px;
   box-sizing: border-box;
   padding: 0 20px;
-  background-color: var(--primary-color);
+  background-color: rgba(18, 18, 18, 0.9);
 
   display: flex;
   justify-content: space-between;
