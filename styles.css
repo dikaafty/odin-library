@@ -265,6 +265,14 @@ dialog {
 .completed-pages-container {
   position: relative;
   height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.completed-pages-container {
+  flex-direction: column;
 }
 
 .input {
