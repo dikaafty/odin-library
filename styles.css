@@ -271,10 +271,6 @@ dialog {
   align-items: center;
 }
 
-.completed-pages-container {
-  flex-direction: column;
-}
-
 .input {
   box-sizing: border-box;
   width: 480px;
