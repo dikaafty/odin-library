@@ -189,4 +189,9 @@ header {
 
 /* Main Styling Start */
 
+main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 /* Main Styling End */
