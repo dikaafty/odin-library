@@ -264,4 +264,18 @@ dialog {
   position: relative;
 }
 
+.input {
+  box-sizing: border-box;
+  width: 480px;
+  height: 40px;
+  background-color: transparent;
+  color: var(--text-color);
+  padding: 5px 10px;
+  margin: 5px 0;
+  font-size: 1.2rem;
+  border: none;
+  border-bottom: 2px solid rgba(41, 20, 2, 0.9);
+  outline: none;
+}
+
 /* Main Styling End */
