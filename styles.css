@@ -165,7 +165,7 @@ header {
   justify-content: space-between;
 }
 
-.author-container {
+.my-container {
   width: 200px;
   height: 90px;
 
@@ -173,11 +173,11 @@ header {
   align-items: center;
 }
 
-.author-container img {
+.my-container img {
   transition: all 200ms ease-in-out;
 }
 
-.author-container img:hover {
+.my-container img:hover {
   transform: scale(1.1);
 }
 
