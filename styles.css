@@ -211,4 +211,9 @@ main {
   align-items: center;
 }
 
+.plus {
+  font-size: 12rem;
+  transition: transform 1s ease-in-out;
+}
+
 /* Main Styling End */
