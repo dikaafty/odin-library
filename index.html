@@ -45,7 +45,7 @@
       <span class="plus">+</span>
     </div>
 
-    <dialog>
+    <dialog open>
       <div>Add New Book</div>
 
       <form>
@@ -60,9 +60,15 @@
           <label for="author">Author</label>
         </div>
 
-        <div class="pages-container">
-          <input type="text" name="pages" id="pages" placeholder="Pages" required>
-          <label for="pages">Pages</label>
+        <div class="total-pages-container">
+          <input type="tel" name="total-pages" id="total-pages" placeholder="Total Pages" required>
+          <label for="total-pages">Total Pages</label>
+        </div>
+
+        <div class="completed-pages-container">
+          <input type="tel" name="completed-pages" id="completed-pages" placeholder="Completed Pages" required>
+          <label for="completed-pages">Completed Pages</label>
+          <input type="checkbox" name="" id="completed-pages-check">
         </div>
 
         <button class="cancel-btn">Cancel</button>
