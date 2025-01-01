@@ -257,4 +257,11 @@ dialog {
   align-items: center;
 }
 
+.title-container,
+.author-container,
+.total-pages-container,
+.completed-pages-container {
+  position: relative;
+}
+
 /* Main Styling End */
