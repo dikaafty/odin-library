@@ -264,6 +264,7 @@ dialog {
 .total-pages-container,
 .completed-pages-container {
   position: relative;
+  height: 80px;
 }
 
 .input {
