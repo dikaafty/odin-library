@@ -197,4 +197,18 @@ main {
   grid-template-columns: repeat(5, 1fr);
 }
 
+.add-btn {
+  width: 260px;
+  height: 320px;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 10px #200000;
+  border-radius: 10px;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Main Styling End */
