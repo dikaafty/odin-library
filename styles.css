@@ -203,17 +203,27 @@ main {
   background-color: var(--accent-color);
   box-shadow: 0 0 4px 10px #200000;
   border-radius: 10px;
+  transition: all 1.5s ease-in-out;
 }
 
 .add-btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: scale(0.7);
+}
+
+.add-btn:hover {
+  transform: scale(1);
 }
 
 .plus {
   font-size: 12rem;
-  transition: transform 1s ease-in-out;
+  transition: transform 1.5s ease-in-out;
+}
+
+.add-btn:hover .plus {
+  transform: rotate(180deg) translateY(-10px);
 }
 
 /* Main Styling End */
