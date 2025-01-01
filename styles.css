@@ -197,7 +197,8 @@ main {
   grid-template-columns: repeat(5, 1fr);
 }
 
-.add-btn {
+.add-btn,
+.book-container {
   width: 260px;
   height: 320px;
   background-color: var(--accent-color);
