@@ -244,4 +244,17 @@ dialog {
   transform: translateX(-50%);
 }
 
+.dialog-title {
+  height: 70px;
+  background-color: #943600;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Main Styling End */
