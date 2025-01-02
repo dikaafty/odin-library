@@ -274,7 +274,7 @@ dialog {
 
 .input {
   box-sizing: border-box;
-  width: 480px;
+  width: 80%;
   height: 40px;
   background-color: transparent;
   color: var(--text-color);
