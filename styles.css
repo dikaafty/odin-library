@@ -285,8 +285,12 @@ dialog {
   outline: none;
 }
 
+.input::placeholder {
+  visibility: hidden;
+}
+
 .input ~ label {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: rgba(240, 240, 240, 0.7);
   position: absolute;
   top: 30%;
