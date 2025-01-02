@@ -229,6 +229,10 @@ main {
   transform: rotate(180deg) translateY(-10px) scale(1.2);
 }
 
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 dialog {
   width: 600px;
   height: 600px;
