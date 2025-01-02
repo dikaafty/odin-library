@@ -21,3 +21,7 @@ user.addEventListener("click", handleInfoToggle);
 addBtn.addEventListener("click", () => {
   dialog.showModal();
 });
+
+cancelBtn.addEventListener("click", () => {
+  dialog.close();
+});
