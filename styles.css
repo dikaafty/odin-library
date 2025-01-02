@@ -250,6 +250,10 @@ dialog[open] {
   animation: fade-in 500ms ease-in;
 }
 
+dialog[open]::backdrop {
+  animation: backdrop-fade-in 400ms ease-in forwards;
+}
+
 .dialog-title {
   height: 70px;
   background-color: #943600;
