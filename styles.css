@@ -285,4 +285,20 @@ dialog {
   outline: none;
 }
 
+.input ~ label {
+  font-size: 1.2rem;
+  color: rgba(240, 240, 240, 0.7);
+  position: absolute;
+  top: 30%;
+  left: 11.6%;
+  transition: all 1s ease-in-out;
+}
+
+.input:focus ~ label,
+.input:focus:not(:placeholder-shown) ~ label,
+.input:valid ~ label {
+  top: -2px;
+  color: #cf4c00;
+}
+
 /* Main Styling End */
