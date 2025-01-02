@@ -231,17 +231,18 @@ main {
 
 dialog {
   width: 600px;
-  height: 99vh;
+  height: 600px;
   background-color: rgba(44, 44, 44, 0.8);
   color: var(--text-color);
   box-shadow: 0 0 10px #3a1500, 0 0 20PX #4b1b00;
   border: none;
   border-radius: 20px;
+  overflow: hidden;
 
   position: absolute;
-  top: 2.5px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .dialog-title {
@@ -250,7 +251,7 @@ dialog {
   border-bottom: 5px solid rgba(18, 18, 18, 0.8);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 32.5px;
   font-size: 2rem;
   font-weight: bold;
 
@@ -264,7 +265,7 @@ dialog {
 .total-pages-container,
 .completed-pages-container {
   position: relative;
-  height: 80px;
+  height: 90px;
 
   display: flex;
   justify-content: center;
@@ -345,7 +346,7 @@ dialog {
 }
 
 .dialog-btns {
-  margin-top: 60px;
+  margin-top: 67.5px;
 
   display: flex;
   justify-content: center;
