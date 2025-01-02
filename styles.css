@@ -242,11 +242,16 @@ dialog {
   border: none;
   border-radius: 20px;
   overflow: hidden;
+  animation: fade-out 200ms ease-in;
 
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+dialog[open] {
+  animation: fade-in 500ms ease-in;
 }
 
 .dialog-title {
