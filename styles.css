@@ -344,4 +344,32 @@ dialog {
   left: 55%;
 }
 
+.dialog-btns {
+  margin-top: 55px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.dialog-btns button {
+  width: 50%;
+  height: 65px;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: rgba(202, 1, 1, 0.8);
+  border: none;
+  border-bottom-left-radius: 20px;
+}
+
+.confirm-btn {
+  background-color: rgba(0, 181, 8, 0.8);
+  border: none;
+  border-bottom-right-radius: 20px;
+}
+
 /* Main Styling End */
