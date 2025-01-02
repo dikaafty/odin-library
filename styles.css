@@ -384,13 +384,11 @@ dialog {
 @keyframes fade-in {
   0% {
     opacity: 0;
-    transform: scaleY(0);
-    display: none; 
+    display: none;
   }
 
   100% {
     opacity: 1;
-    transform: scaleY(1);
     display: block;
   }
 }
@@ -398,13 +396,11 @@ dialog {
 @keyframes fade-out {
   0% {
     opacity: 1;
-    transform: scaleY(1);
     display: block;
   }
 
   100% {
     opacity: 0;
-    transform: scaleY(0);
     display: none;
   }
 }
