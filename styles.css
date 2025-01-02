@@ -301,7 +301,7 @@ dialog {
 .input:focus ~ label,
 .input:focus:not(:placeholder-shown) ~ label,
 .input:valid ~ label {
-  top: -2px;
+  top: -5px;
   color: #cf4c00;
 }
 
