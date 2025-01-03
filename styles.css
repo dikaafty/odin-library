@@ -231,7 +231,7 @@ main {
 
 dialog {
   width: 600px;
-  height: 600px;
+  height: 91.94vh;
   background-color: rgba(44, 44, 44, 0.8);
   color: var(--text-color);
   box-shadow: 0 0 10px #3a1500, 0 0 20PX #4b1b00;
@@ -260,7 +260,7 @@ dialog[open]::backdrop {
   border-bottom: 5px solid rgba(18, 18, 18, 0.8);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  margin-bottom: 32.5px;
+  margin-bottom: 7.5vh;
   font-size: 2rem;
   font-weight: bold;
 
@@ -274,7 +274,7 @@ dialog[open]::backdrop {
 .total-pages-container,
 .completed-pages-container {
   position: relative;
-  height: 90px;
+  height: 12.5vh;
 
   display: flex;
   justify-content: center;
@@ -315,6 +315,11 @@ dialog[open]::backdrop {
   color: #cf4c00;
 }
 
+.completed-pages-container input {
+  width: 50%;
+  margin-right: 30%;
+}
+
 #completed-pages-check {
   appearance: none;
   width: 80px;
@@ -323,8 +328,8 @@ dialog[open]::backdrop {
   border: 2px solid #d60303;
   border-radius: 50px;
   position: absolute;
-  bottom: -35px;
-  left: 50%;
+  top: 13px;
+  left: 70%;
   transform: translateX(-50%);
   transition: all 1s ease-in-out;
 }
@@ -355,7 +360,7 @@ dialog[open]::backdrop {
 }
 
 .dialog-btns {
-  margin-top: 67.5px;
+  margin-top: 13vh;
 
   display: flex;
   justify-content: center;
@@ -363,11 +368,15 @@ dialog[open]::backdrop {
 
 .dialog-btns button {
   width: 50%;
-  height: 65px;
+  height: 11vh;
   color: var(--text-color);
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cancel-btn {
