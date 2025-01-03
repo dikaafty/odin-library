@@ -52,4 +52,6 @@ cancelBtn.addEventListener("click", (e) => {
 
 confirmBtn.addEventListener("click", (e) => {
   e.preventDefault();
+
+  resetDialogInputs();
 });
