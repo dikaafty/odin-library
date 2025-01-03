@@ -23,7 +23,7 @@ function Book(title, author, pages, completed) {
   this.completed = completed;
 }
 
-// Funcitions
+// Functions
 function handleInfoToggle() {
   info.classList.toggle("hide");
 }
