@@ -19,6 +19,13 @@ handleInfoToggle = () => {
   info.classList.toggle("hide");
 }
 
+resetDialogInputs = () => {
+  titleInput.value = "";
+  authorInput.value = "";
+  totalPagesInput.value = "";
+  completedPagesInput.value = "";
+}
+
 // Events
 user.addEventListener("click", handleInfoToggle);
 
