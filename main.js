@@ -23,12 +23,12 @@ function Book(title, author, pages, completed) {
   this.completed = completed;
 }
 
-// Handlers
-handleInfoToggle = () => {
+// Funcitions
+function handleInfoToggle() {
   info.classList.toggle("hide");
 }
 
-resetDialogInputs = () => {
+function resetDialogInputs() {
   titleInput.value = "";
   authorInput.value = "";
   totalPagesInput.value = "";
