@@ -49,3 +49,7 @@ cancelBtn.addEventListener("click", (e) => {
 
   dialog.close();
 });
+
+confirmBtn.addEventListener("click", (e) => {
+
+});
