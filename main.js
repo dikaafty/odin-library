@@ -11,6 +11,7 @@ const totalPagesInput = document.getElementById("total-pages");
 const completedPagesInput = document.getElementById("completed-pages");
 
 // State
+let myLibrary = [];
 
 // On mount
 
