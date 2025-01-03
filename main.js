@@ -15,6 +15,14 @@ let myLibrary = [];
 
 // On mount
 
+// Constructor
+function Book(title, author, pages, completed) {
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.completed = completed;
+}
+
 // Handlers
 handleInfoToggle = () => {
   info.classList.toggle("hide");
