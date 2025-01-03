@@ -54,4 +54,9 @@ confirmBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
   resetDialogInputs();
+
+  if(titleInput.value && authorInput.value &&
+    totalPagesInput.value && completedPagesInput.value) {
+      dialog.close();
+  }
 });
