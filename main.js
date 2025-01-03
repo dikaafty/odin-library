@@ -36,5 +36,7 @@ addBtn.addEventListener("click", () => {
 cancelBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
+  resetDialogInputs();
+
   dialog.close();
 });
