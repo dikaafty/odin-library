@@ -12,7 +12,12 @@ const totalPagesInput = document.getElementById("total-pages");
 const completedPagesInput = document.getElementById("completed-pages");
 
 // State
-let myLibrary = [];
+let myLibrary = [{
+  title: "LOVE",
+  author: "ANN",
+  pages: "999",
+  completed: "999"
+}];
 
 // On mount
 
@@ -65,7 +70,7 @@ function displayBook() {
     bookContainer.appendChild(readButton);
     bookContainer.appendChild(editButton);
 
-    main.insertBefore(bookContainer);
+    main.insertBefore(bookContainer, addBtn);
   });
 }
 
