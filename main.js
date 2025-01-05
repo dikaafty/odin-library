@@ -68,6 +68,12 @@ function displayBook() {
     const removeButton = document.createElement("button");
 
     bookContainer.classList.add("book-container");
+    bookTitle.classList.add("book-title");
+    bookAuthor.classList.add("book-author");
+    bookTotalPages.classList.add("book-pages");
+    readButton.classList.add("read-btn");
+    editButton.classList.add("edit-btn");
+    removeButton.classList.add("remove-btn");
 
     bookTitle.textContent = book.title;
     bookAuthor.textContent = book.author;
