@@ -81,6 +81,8 @@ function displayBook() {
   });
 }
 
+displayBook();
+
 // Events
 user.addEventListener("click", handleInfoToggle);
 
