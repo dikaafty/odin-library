@@ -57,6 +57,7 @@ function displayBook() {
     const bookTotalPages = document.createElement("p");
     const readButton = document.createElement("button");
     const editButton = document.createElement("button");
+    const removeButton = document.createElement("button");
 
     bookContainer.classList.add("book-container");
 
@@ -64,6 +65,7 @@ function displayBook() {
     bookAuthor.textContent = book.author;
     bookTotalPages.textContent = book.pages;
     editButton.textContent = "Edit";
+    removeButton.textContent = "✖";
 
     if(book.completed === book.pages) {
       readButton.textContent = "Already read";
@@ -71,6 +73,7 @@ function displayBook() {
       readButton.textContent = "Not read"
     }
 
+    bookContainer.appendChild(removeButton);
     bookContainer.appendChild(bookTitle);
     bookContainer.appendChild(bookTotalPages);
     bookContainer.appendChild(bookAuthor);
