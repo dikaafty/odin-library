@@ -65,6 +65,12 @@ function displayBook() {
     bookTotalPages.textContent = book.pages;
     editButton.textContent = "Edit";
 
+    if(book.completed === book.pages) {
+      readButton.textContent = "Already read";
+    } else {
+      readButton.textContent = "Not read"
+    }
+
     bookContainer.appendChild(bookTitle);
     bookContainer.appendChild(bookTotalPages);
     bookContainer.appendChild(bookAuthor);
