@@ -214,8 +214,8 @@ main {
   box-shadow: 0 0 4px 10px #200000;
   border-radius: 10px;
   transition: all 1.5s ease-in-out;
-  position: absolute;
-  bottom: 10%;
+  position: fixed;
+  bottom: 7%;
   right: 5%;
 
   display: flex;
