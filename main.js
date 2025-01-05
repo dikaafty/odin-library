@@ -13,10 +13,10 @@ const completedPagesInput = document.getElementById("completed-pages");
 
 // State
 let myLibrary = [{
-  title: "LOVE",
-  author: "ANN",
-  pages: "999",
-  completed: "999"
+  title: "These Feelings",
+  author: "Annie",
+  pages: "77",
+  completed: "77"
 }];
 
 // On mount
