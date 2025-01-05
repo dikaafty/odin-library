@@ -77,7 +77,7 @@ function displayBook() {
     bookContainer.appendChild(readButton);
     bookContainer.appendChild(editButton);
 
-    main.insertBefore(bookContainer, addBtn);
+    main.appendChild(bookContainer);
   });
 }
 
