@@ -405,7 +405,7 @@ dialog[open]::backdrop {
   background-color: var(--accent-color);
   box-shadow: 0 0 4px 10px #200000;
   border-radius: 10px;
-  transition: all 1.5s ease-in-out;
+  animation: appear-in 700ms ease-in-out;
 }
 
 /* JS Created Element Styling End */
