@@ -48,8 +48,8 @@ function addBookToLibrary() {
 
 function displayBook() {
   myLibrary.forEach((book) => {
-    // Reset book html element
-    book.innerHTML = "";
+    // Reset main html element
+    main.innerHTML = "";
 
     const bookContainer = document.createElement("div");
     const bookTitle = document.createElement("p");
