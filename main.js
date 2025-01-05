@@ -12,12 +12,20 @@ const totalPagesInput = document.getElementById("total-pages");
 const completedPagesInput = document.getElementById("completed-pages");
 
 // State
-let myLibrary = [{
-  title: "These Feelings",
-  author: "Annie",
-  pages: "77",
-  completed: "77"
-}];
+let myLibrary = [
+  {
+    title: "These Feelings",
+    author: "Annie",
+    pages: "77",
+    completed: "77"
+  },
+  {
+    title: "The Return of the King",
+    author: "J.R.R. Tolkien",
+    pages: 450,
+    completed: 450
+  }
+];
 
 // On mount
 
