@@ -16,8 +16,8 @@ let myLibrary = [
   {
     title: "These Feelings",
     author: "Annie",
-    pages: "77",
-    completed: "77"
+    pages: 77,
+    completed: 77
   },
   {
     title: "The Return of the King",
