@@ -47,10 +47,10 @@ function addBookToLibrary() {
 }
 
 function displayBook() {
-  myLibrary.forEach((book) => {
-    // Reset main html element
-    main.innerHTML = "";
+  // Reset main html element
+  main.innerHTML = "";
 
+  myLibrary.forEach((book) => {
     const bookContainer = document.createElement("div");
     const bookTitle = document.createElement("p");
     const bookAuthor = document.createElement("p");
