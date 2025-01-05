@@ -104,6 +104,7 @@ confirmBtn.addEventListener("click", (e) => {
   if(titleInput.value && authorInput.value &&
     totalPagesInput.value && completedPagesInput.value) {
       addBookToLibrary();
+      displayBook();
       resetDialogInputs();
 
       dialog.close();
