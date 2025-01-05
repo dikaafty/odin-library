@@ -198,15 +198,6 @@ main {
   gap: 60px;
 }
 
-.book-container {
-  width: 260px;
-  height: 320px;
-  background-color: var(--accent-color);
-  box-shadow: 0 0 4px 10px #200000;
-  border-radius: 10px;
-  transition: all 1.5s ease-in-out;
-}
-
 .add-btn {
   width: 80px;
   aspect-ratio: 1;
@@ -407,6 +398,15 @@ dialog[open]::backdrop {
 /* Main Styling End */
 
 /* JS Created Element Styling Start */
+
+.book-container {
+  width: 260px;
+  height: 320px;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 10px #200000;
+  border-radius: 10px;
+  transition: all 1.5s ease-in-out;
+}
 
 /* JS Created Element Styling End */
 
