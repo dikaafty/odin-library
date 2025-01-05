@@ -40,6 +40,34 @@ function addBookToLibrary() {
     totalPagesInput.value, completedPagesInput.value));
 }
 
+function displayBook() {
+  myLibrary.forEach((book) => {
+    // Reset book html element
+    book.innerHTML = "";
+
+    const bookContainer = document.createElement("div");
+    const bookTitle = document.createElement("p");
+    const bookAuthor = document.createElement("p");
+    const bookTotalPages = document.createElement("p");
+    const readButton = document.createElement("button");
+    const editButton = document.createElement("button");
+
+    bookContainer.classList.add(".book-container");
+
+    bookTitle.textContent = book.title;
+    bookAuthor.textContent = book.author;
+    bookTotalPages.textContent = book.pages;
+
+    bookContainer.appendChild(bookTitle);
+    bookContainer.appendChild(bookTotalPages);
+    bookContainer.appendChild(bookAuthor);
+    bookContainer.appendChild(readButton);
+    bookContainer.appendChild(editButton);
+
+    main.appendChild(bookContainer);
+  });
+}
+
 // Events
 user.addEventListener("click", handleInfoToggle);
 
