@@ -63,6 +63,7 @@ function displayBook() {
     bookTitle.textContent = book.title;
     bookAuthor.textContent = book.author;
     bookTotalPages.textContent = book.pages;
+    editButton.textContent = "Edit";
 
     bookContainer.appendChild(bookTitle);
     bookContainer.appendChild(bookTotalPages);
