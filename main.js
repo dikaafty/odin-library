@@ -58,7 +58,7 @@ function displayBook() {
     const readButton = document.createElement("button");
     const editButton = document.createElement("button");
 
-    bookContainer.classList.add(".book-container");
+    bookContainer.classList.add("book-container");
 
     bookTitle.textContent = book.title;
     bookAuthor.textContent = book.author;
