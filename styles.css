@@ -477,6 +477,13 @@ dialog[open]::backdrop {
   border-radius: 5px;
 }
 
+.already-read {
+  background-color: rgba(59, 176, 63, 0.5);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+}
+
 /* JS Created Element Styling End */
 
 /* Media Queries Area */
