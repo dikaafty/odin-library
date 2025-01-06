@@ -428,7 +428,6 @@ dialog[open]::backdrop {
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
-  margin: 5px 0;
   overflow-wrap: anywhere;
 }
 
@@ -436,7 +435,6 @@ dialog[open]::backdrop {
   font-size: 1.1rem;
   font-weight: bold;
   text-align: center;
-  margin: 25px 0;
   overflow-wrap: anywhere;
 }
 
@@ -444,7 +442,6 @@ dialog[open]::backdrop {
   font-size: 1rem;
   font-style: italic;
   text-align: right;
-  margin: 0 10px 10px 0;
   overflow-wrap: anywhere;
 }
 
