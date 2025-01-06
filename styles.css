@@ -459,6 +459,10 @@ dialog[open]::backdrop {
   cursor: pointer;
 }
 
+.edit-btn {
+  margin-bottom: 0;
+}
+
 /* JS Created Element Styling End */
 
 /* Media Queries Area */
