@@ -408,6 +408,20 @@ dialog[open]::backdrop {
   animation: appear-in 700ms ease-in-out;
 }
 
+.remove-btn {
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  border: none;
+  margin: 7px 5px 0 88%;
+  transition: all 400ms ease-in-out;
+}
+
+.remove-btn:hover {
+  color: #cf4c00;
+  transform: scale(1.1);
+}
+
 /* JS Created Element Styling End */
 
 /* Media Queries Area */
