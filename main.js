@@ -32,6 +32,7 @@ let myLibrary = [
 ];
 
 // On mount
+bookNumber.textContent = myLibrary.length;
 
 // Constructor
 function Book(title, author, pages, completed) {
