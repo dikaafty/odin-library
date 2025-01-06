@@ -422,6 +422,13 @@ dialog[open]::backdrop {
   transform: scale(1.1);
 }
 
+.book-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+}
+
 /* JS Created Element Styling End */
 
 /* Media Queries Area */
