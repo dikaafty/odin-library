@@ -400,11 +400,13 @@ dialog[open]::backdrop {
 /* JS Created Element Styling Start */
 
 .book-container {
+  box-sizing: border-box;
   width: 260px;
   height: 320px;
   background-color: var(--accent-color);
   box-shadow: 0 0 4px 10px #200000;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 5px;
   animation: appear-in 700ms ease-in-out;
 }
 
