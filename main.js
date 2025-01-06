@@ -111,6 +111,20 @@ function displayBook() {
 
 displayBook();
 
+function countCompletedBook() {
+  let completedBook = 0;
+
+  for(let i = 0; i < myLibrary.length; i++) {
+    if(myLibrary[i].completed === myLibrary[i].pages) {
+      completedBook++;
+    }
+  }
+
+  completedBookNumber.textContent = completedBook;
+}
+
+countCompletedBook();
+
 function sumPages() {
   let totalPages = 0;
 
