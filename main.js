@@ -123,6 +123,17 @@ function sumPages() {
 
 sumPages();
 
+function sumCompletedPages() {
+  let totalPages = 0;
+
+  for(let i = 0; i < myLibrary.length; i++) {
+    totalPages += myLibrary[i].completed;
+  }
+
+  completedPagesNumber.textContent = totalPages;
+}
+
+sumCompletedPages();
 
 // Events
 user.addEventListener("click", handleInfoToggle);
