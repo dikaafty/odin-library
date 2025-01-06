@@ -171,10 +171,13 @@ confirmBtn.addEventListener("click", (e) => {
     totalPagesInput.value && completedPagesInput.value) {
       addBookToLibrary();
       displayBook();
+
+      // Manipulate libraryz stats
       bookNumber.textContent = myLibrary.length;
       sumPages();
       sumCompletedPages();
       countCompletedBook();
+
       resetDialogInputs();
 
       dialog.close();
