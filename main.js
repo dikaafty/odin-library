@@ -141,6 +141,7 @@ confirmBtn.addEventListener("click", (e) => {
     totalPagesInput.value && completedPagesInput.value) {
       addBookToLibrary();
       displayBook();
+      sumPages();
       resetDialogInputs();
 
       dialog.close();
