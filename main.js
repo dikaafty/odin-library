@@ -107,6 +107,18 @@ function displayBook() {
 
 displayBook();
 
+function sumPages() {
+  let totalPages = 0;
+
+  for(let i = 0; i < myLibrary.length; i++) {
+    totalPages += myLibrary[i].pages;
+  }
+
+  pagesNumber.textContent = totalPages;
+}
+
+sumPages();
+
 // Events
 user.addEventListener("click", handleInfoToggle);
 
