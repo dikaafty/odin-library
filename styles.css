@@ -463,6 +463,13 @@ dialog[open]::backdrop {
   margin-bottom: 5px;
 }
 
+.not-read {
+  background-color: rgba(175, 58, 58, 0.5);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+}
+
 /* JS Created Element Styling End */
 
 /* Media Queries Area */
