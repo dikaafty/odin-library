@@ -401,7 +401,7 @@ dialog[open]::backdrop {
 
 .book-container {
   box-sizing: border-box;
-  width: 280px;
+  width: 260px;
   height: 360px;
   background-color: var(--accent-color);
   box-shadow: 0 0 4px 10px #200000;
