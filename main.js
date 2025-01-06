@@ -95,8 +95,10 @@ function displayBook() {
 
     if(book.completed === book.pages) {
       readButton.textContent = "Already read";
+      readButton.className = "read-btn already-read";
     } else {
-      readButton.textContent = "Not read"
+      readButton.textContent = "Not read";
+      readButton.className = "read-btn not-read";
     }
 
     bookContainer.appendChild(removeButton);
@@ -111,7 +113,7 @@ function displayBook() {
 
     removeButton.addEventListener("click", () => {
       myLibrary.splice(index, 1);
-      
+
       displayBook();
 
       // Manipulate libraryz stats
