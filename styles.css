@@ -427,6 +427,7 @@ dialog[open]::backdrop {
   font-weight: bold;
   text-align: center;
   margin: 5px 0;
+  overflow-wrap: anywhere;
 }
 
 .book-pages {
@@ -434,6 +435,7 @@ dialog[open]::backdrop {
   font-weight: bold;
   text-align: center;
   margin: 25px 0;
+  overflow-wrap: anywhere;
 }
 
 .book-author {
@@ -441,6 +443,7 @@ dialog[open]::backdrop {
   font-style: italic;
   text-align: right;
   margin: 0 10px 10px 0;
+  overflow-wrap: anywhere;
 }
 
 /* JS Created Element Styling End */
