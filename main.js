@@ -77,7 +77,7 @@ function displayBook() {
 
     bookTitle.textContent = `" ${book.title} "`;
     bookAuthor.textContent = book.author;
-    bookTotalPages.textContent = book.pages;
+    bookTotalPages.textContent = `${book.pages} pages`;
     editButton.textContent = "Edit";
     removeButton.textContent = "✖";
 
