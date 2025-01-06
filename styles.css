@@ -429,6 +429,13 @@ dialog[open]::backdrop {
   margin: 5px 0;
 }
 
+.book-pages {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 25px 0;
+}
+
 /* JS Created Element Styling End */
 
 /* Media Queries Area */
