@@ -15,6 +15,7 @@ const authorInput = document.getElementById("author");
 const totalPagesInput = document.getElementById("total-pages");
 const completedPagesInput = document.getElementById("completed-pages");
 
+
 // State
 let myLibrary = [
   {
@@ -31,8 +32,10 @@ let myLibrary = [
   }
 ];
 
+
 // On mount
 bookNumber.textContent = myLibrary.length;
+
 
 // Constructor
 function Book(title, author, pages, completed) {
@@ -41,6 +44,7 @@ function Book(title, author, pages, completed) {
   this.pages = pages;
   this.completed = completed;
 }
+
 
 // Functions
 function handleInfoToggle() {
@@ -118,6 +122,7 @@ function sumPages() {
 }
 
 sumPages();
+
 
 // Events
 user.addEventListener("click", handleInfoToggle);
