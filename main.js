@@ -158,6 +158,7 @@ confirmBtn.addEventListener("click", (e) => {
       addBookToLibrary();
       displayBook();
       sumPages();
+      sumCompletedPages();
       resetDialogInputs();
 
       dialog.close();
