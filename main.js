@@ -56,7 +56,7 @@ function resetDialogInputs() {
 
 function addBookToLibrary() {
   myLibrary.push(new Book(titleInput.value, authorInput.value, 
-    totalPagesInput.value, completedPagesInput.value));
+    Number(totalPagesInput.value), Number(completedPagesInput.value)));
 }
 
 function displayBook() {
