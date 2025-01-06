@@ -108,6 +108,18 @@ function displayBook() {
     bookContainer.appendChild(buttonContainer);
 
     main.appendChild(bookContainer);
+
+    removeButton.addEventListener("click", () => {
+      myLibrary.splice(index, 1);
+      
+      displayBook();
+
+      // Manipulate libraryz stats
+      bookNumber.textContent = myLibrary.length;
+      sumPages();
+      sumCompletedPages();
+      countCompletedBook();
+    });
   });
 }
 
