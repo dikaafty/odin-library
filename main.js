@@ -67,6 +67,8 @@ function displayBook() {
   // Reset main html element
   main.innerHTML = "";
 
+  const previousCompletedPages = book.completed; 
+
   myLibrary.forEach((book, index) => {
     const bookContainer = document.createElement("div");
     const bookTitle = document.createElement("p");
@@ -128,6 +130,10 @@ function displayBook() {
       if(buttonState === "Not read") {
         readButton.textContent = "Reading";
         readButton.className = "read-btn reading";
+
+        book.completed = previousCompletedPages;
+
+        manipulateStats();
       } else if(buttonState === "Reading") {
         readButton.textContent = "Already read";
         readButton.className = "read-btn already-read";
