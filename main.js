@@ -121,6 +121,30 @@ function displayBook() {
 
       manipulateStats();
     });
+
+    readButton.addEventListener("click", () => {
+      const buttonState = readButton.textContent;
+
+      if(buttonState === "Not read") {
+        readButton.textContent = "Reading";
+        readButton.className = "read-btn reading";
+      } else if(buttonState === "Reading") {
+        readButton.textContent = "Already read";
+        readButton.className = "read-btn already-read";
+
+        book.completed = book.pages;
+
+        manipulateStats();
+      } else if(buttonState === "Already read") {
+        readButton.textContent = "Not read";
+        readButton.className = "read-btn not-read";
+
+        book.completed = 0;
+        
+        manipulateStats();
+      }
+    });
+
   });
 }
 
