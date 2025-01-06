@@ -85,6 +85,8 @@ function displayBook() {
     editButton.classList.add("edit-btn");
     removeButton.classList.add("remove-btn");
 
+    removeButton.setAttribute("data-index", index);
+
     bookTitle.textContent = `" ${book.title} "`;
     bookAuthor.textContent = book.author;
     bookTotalPages.textContent = `${book.pages} pages`;
