@@ -67,9 +67,10 @@ function displayBook() {
   // Reset main html element
   main.innerHTML = "";
 
-  const previousCompletedPages = book.completed; 
 
   myLibrary.forEach((book, index) => {
+    const previousCompletedPages = book.completed; 
+
     const bookContainer = document.createElement("div");
     const bookTitle = document.createElement("p");
     const bookAuthor = document.createElement("p");
