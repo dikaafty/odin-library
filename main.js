@@ -1,6 +1,7 @@
 // Selectors
 const user = document.querySelector(".user-container");
 const info = document.querySelector(".information");
+const bookNumber = document.querySelector(".book-number");
 const main = document.querySelector(".library-main");
 const dialog = document.querySelector("dialog");
 const addBtn = document.querySelector(".add-btn");
