@@ -470,6 +470,13 @@ dialog[open]::backdrop {
   border-radius: 5px;
 }
 
+.reading {
+  background-color: rgba(182, 168, 41, 0.5);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+}
+
 /* JS Created Element Styling End */
 
 /* Media Queries Area */
