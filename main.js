@@ -119,11 +119,7 @@ function displayBook() {
 
       displayBook();
 
-      // Manipulate libraryz stats
-      bookNumber.textContent = myLibrary.length;
-      sumPages();
-      sumCompletedPages();
-      countCompletedBook();
+      manipulateStats();
     });
   });
 }
@@ -168,6 +164,13 @@ function sumCompletedPages() {
 
 sumCompletedPages();
 
+function manipulateStats() {
+  bookNumber.textContent = myLibrary.length;
+  sumPages();
+  sumCompletedPages();
+  countCompletedBook();
+}
+
 // Events
 user.addEventListener("click", handleInfoToggle);
 
@@ -190,13 +193,7 @@ confirmBtn.addEventListener("click", (e) => {
     totalPagesInput.value && completedPagesInput.value) {
       addBookToLibrary();
       displayBook();
-
-      // Manipulate libraryz stats
-      bookNumber.textContent = myLibrary.length;
-      sumPages();
-      sumCompletedPages();
-      countCompletedBook();
-
+      manipulateStats();
       resetDialogInputs();
 
       dialog.close();
