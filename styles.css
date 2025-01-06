@@ -436,6 +436,13 @@ dialog[open]::backdrop {
   margin: 25px 0;
 }
 
+.book-author {
+  font-size: 1rem;
+  font-style: italic;
+  text-align: right;
+  margin: 0 10px 10px 0;
+}
+
 /* JS Created Element Styling End */
 
 /* Media Queries Area */
