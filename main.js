@@ -96,6 +96,9 @@ function displayBook() {
     if(book.completed === book.pages) {
       readButton.textContent = "Already read";
       readButton.className = "read-btn already-read";
+    } else if(book.completed > 0 && book.completed < book.pages) {
+      readButton.textContent = "Reading";
+      readButton.className = "read-btn reading";
     } else {
       readButton.textContent = "Not read";
       readButton.className = "read-btn not-read";
