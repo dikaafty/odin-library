@@ -66,6 +66,7 @@ function displayBook() {
     const readButton = document.createElement("button");
     const editButton = document.createElement("button");
     const removeButton = document.createElement("button");
+    const buttonContainer = document.createElement("div");
 
     bookContainer.classList.add("book-container");
     bookTitle.classList.add("book-title");
@@ -91,8 +92,9 @@ function displayBook() {
     bookContainer.appendChild(bookTitle);
     bookContainer.appendChild(bookTotalPages);
     bookContainer.appendChild(bookAuthor);
-    bookContainer.appendChild(readButton);
-    bookContainer.appendChild(editButton);
+    buttonContainer.appendChild(readButton);
+    buttonContainer.appendChild(editButton);
+    bookContainer.appendChild(buttonContainer);
 
     main.appendChild(bookContainer);
   });
