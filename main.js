@@ -171,6 +171,7 @@ confirmBtn.addEventListener("click", (e) => {
     totalPagesInput.value && completedPagesInput.value) {
       addBookToLibrary();
       displayBook();
+      bookNumber.textContent = myLibrary.length;
       sumPages();
       sumCompletedPages();
       countCompletedBook();
