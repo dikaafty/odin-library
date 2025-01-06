@@ -408,6 +408,10 @@ dialog[open]::backdrop {
   padding: 10px;
   border-radius: 5px;
   animation: appear-in 700ms ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .remove-btn {
