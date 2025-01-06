@@ -67,7 +67,7 @@ function displayBook() {
   // Reset main html element
   main.innerHTML = "";
 
-  myLibrary.forEach((book) => {
+  myLibrary.forEach((book, index) => {
     const bookContainer = document.createElement("div");
     const bookTitle = document.createElement("p");
     const bookAuthor = document.createElement("p");
