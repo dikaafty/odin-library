@@ -4,6 +4,7 @@ const info = document.querySelector(".information");
 const bookNumber = document.querySelector(".book-number");
 const completedBookNumber = document.querySelector(".completed-book-number");
 const pagesNumber = document.querySelector(".pages-number");
+const completedPagesNumber = document.querySelector(".completed-pages-number");
 const main = document.querySelector(".library-main");
 const dialog = document.querySelector("dialog");
 const addBtn = document.querySelector(".add-btn");
