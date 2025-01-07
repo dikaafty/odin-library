@@ -334,6 +334,7 @@ confirmBtn.addEventListener("click", (e) => {
       addBookToLibrary();
       displayBook();
       manipulateStats();
+      resetDialogLabels();
       resetDialogInputs();
 
       dialog.close();
