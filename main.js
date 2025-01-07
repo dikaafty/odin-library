@@ -217,6 +217,19 @@ function hasNumber(myString) {
   return /\d/.test(myString);
 }
 
+function handleAuthorInputInvalid() {
+  if(hasNumber(authorInput.value)) {
+    document.querySelector("#author ~ label").textContent = "The author must not contain a number";
+    document.querySelector("#author ~ label").style.color = "red";
+  } else if(authorInput.value === "") {
+    document.querySelector("#author ~ label").textContent = "The author must contain a letter between 1 and 30";
+    document.querySelector("#author ~ label").style.color = "red";
+  } else {
+    document.querySelector("#author ~ label").textContent = "Author";
+    document.querySelector("#author ~ label").style.color = "#cf4c00";
+  }
+}
+
 
 // Events
 user.addEventListener("click", handleInfoToggle);
