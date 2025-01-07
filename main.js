@@ -259,3 +259,5 @@ confirmBtn.addEventListener("click", (e) => {
       dialog.close();
   }
 });
+
+authorInput.addEventListener("keyup", handleAuthorInputInvalid);
