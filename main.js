@@ -254,7 +254,9 @@ confirmBtn.addEventListener("click", (e) => {
 
   if(titleInput.value && authorInput.value &&
     totalPagesInput.value && completedPagesInput.value &&
-    authorLabel.textContent === "Author") {
+    authorLabel.textContent === "Author" && 
+    totalPagesLabel.textContent === "Total Pages" && 
+    completedPagesLabel.textContent === "Completed Pages") {
       addBookToLibrary();
       displayBook();
       manipulateStats();
