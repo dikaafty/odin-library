@@ -11,6 +11,7 @@ const addBtn = document.querySelector(".add-btn");
 const cancelBtn = document.querySelector(".cancel-btn");
 const confirmBtn = document.querySelector(".confirm-btn");
 const authorLabel = document.querySelector("#author ~ label");
+const totalPagesLabel = document.querySelector("#total-pages ~ label");
 const titleInput = document.getElementById("title");
 const authorInput = document.getElementById("author");
 const totalPagesInput = document.getElementById("total-pages");
