@@ -344,4 +344,7 @@ totalPagesInput.addEventListener("keyup", () => {
   changeCompletedPagesCheckState();
 });
 
-completedPagesInput.addEventListener("keyup", handleCompletedPagesInputInvalid);
+completedPagesInput.addEventListener("keyup", () => {
+  handleCompletedPagesInputInvalid();
+  changeCompletedPagesCheckState();
+});
