@@ -73,6 +73,11 @@ function resetDialogLabels() {
   });
 }
 
+function resetCompletedPagesCheckState() {
+  completedPagesCheck.classList.add("not-checked");
+  completedPagesCheck.classList.remove("checked");
+}
+
 function addBookToLibrary() {
   myLibrary.push(new Book(titleInput.value, authorInput.value, 
     Number(totalPagesInput.value), Number(completedPagesInput.value)));
