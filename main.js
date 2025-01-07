@@ -251,6 +251,29 @@ function handleTotalPagesInputInvalid() {
   }
 }
 
+function handleCompletedPagesInputInvalid() {
+  const totalPagesConverted = Number(totalPagesInput.value);
+  const completedPagesConverted = Number(completedPagesInput.value);
+
+  if(isNaN(completedPagesConverted)) {
+    completedPagesLabel.textContent = "Completed pages must not contain a string";
+    completedPagesLabel.style.color = "red";
+    completedPagesLabel.style.fontSize = "0.95rem";
+  } else if(completedPagesConverted < 1 || completedPagesConverted > 999999) {
+    completedPagesLabel.textContent = "Completed pages must contain a number between 1 and 999999";
+    completedPagesLabel.style.color = "red";
+    completedPagesLabel.style.fontSize = "0.8rem";
+  } else if(completedPagesConverted > totalPagesConverted) {
+    completedPagesLabel.textContent = "Completed pages must be less than total pages";
+    completedPagesLabel.style.color = "red";
+    completedPagesLabel.style.fontSize = "0.9rem";
+  } else {
+    completedPagesLabel.textContent = "Completed Pages";
+    completedPagesLabel.style.color = "#cf4c00";
+    completedPagesLabel.style.fontSize = "1.3rem";
+  }
+}
+
 
 // Events
 user.addEventListener("click", handleInfoToggle);
