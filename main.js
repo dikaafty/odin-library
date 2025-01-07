@@ -152,6 +152,17 @@ function displayBook() {
       }
     });
 
+    editButton.addEventListener("click", () => {
+      titleInput.value = book.title;
+      authorInput.value = book.author;
+      totalPagesInput.value = book.pages;
+      completedPagesInput.value = book.completed;
+
+      dialog.showModal();
+
+      myLibrary.splice(index, 1);
+    });
+
   });
 }
 
