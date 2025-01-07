@@ -303,7 +303,9 @@ function changeCompletedPagesCheckState() {
   const totalPagesConverted = Number(totalPagesInput.value);
   const completedPagesConverted = Number(completedPagesInput.value);
 
-  if(completedPagesConverted === totalPagesConverted) {
+  if(completedPagesConverted === totalPagesConverted &&
+     completedPagesConverted !== 0 && totalPagesConverted !== 0 &&
+     completedPagesConverted <= 999999 && totalPagesConverted <= 999999) {
     completedPagesCheck.classList.add("checked");
     completedPagesCheck.classList.remove("not-checked");
   } else {
