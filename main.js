@@ -343,6 +343,7 @@ confirmBtn.addEventListener("click", (e) => {
       manipulateStats();
       resetDialogLabels();
       resetDialogInputs();
+      resetCompletedPagesCheckState();
 
       dialog.close();
   }
