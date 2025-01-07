@@ -76,6 +76,7 @@ function resetDialogLabels() {
 function resetCompletedPagesCheckState() {
   completedPagesCheck.classList.add("not-checked");
   completedPagesCheck.classList.remove("checked");
+  completedPagesCheck.style.left = "70%";
 }
 
 function addBookToLibrary() {
