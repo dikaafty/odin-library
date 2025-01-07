@@ -233,6 +233,24 @@ function handleAuthorInputInvalid() {
   }
 }
 
+function handleTotalPagesInputInvalid() {
+  const totalPagesCoverted = Number(totalPagesInput.value);
+
+  if(isNaN(totalPagesCoverted)) {
+    totalPagesLabel.textContent = "Total pages must not contain a string";
+    totalPagesLabel.style.color = "red";
+    totalPagesLabel.style.fontSize = "1.3rem";
+  } else if(totalPagesCoverted < 1 || totalPagesCoverted > 999999) {
+    totalPagesLabel.textContent = "Total pages must contain a number between 1 and 999999";
+    totalPagesLabel.style.color = "red";
+    totalPagesLabel.style.fontSize = "1.1rem";
+  } else {
+    totalPagesLabel.textContent = "Total Pages";
+    totalPagesLabel.style.color = "#cf4c00";
+    totalPagesLabel.style.fontSize = "1.3rem";
+  }
+}
+
 
 // Events
 user.addEventListener("click", handleInfoToggle);
