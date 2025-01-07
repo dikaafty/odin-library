@@ -79,7 +79,7 @@ function addBookToLibrary() {
 }
 
 function displayBook() {
-  // Reset main html element
+  // Reset content of main element
   main.innerHTML = "";
 
 
