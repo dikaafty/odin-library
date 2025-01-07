@@ -323,7 +323,7 @@ dialog[open]::backdrop {
   margin-right: 30%;
 }
 
-#completed-pages-check {
+#completed-pages-check.not-checked {
   appearance: none;
   width: 80px;
   height: 40px;
@@ -338,11 +338,11 @@ dialog[open]::backdrop {
   transition: all 1s ease-in-out;
 }
 
-#completed-pages-check:checked {
+#completed-pages-check.checked {
   border: 2px solid #cf4c00;
 }
 
-#completed-pages-check:before {
+#completed-pages-check::before {
   content: "";
   width: 30px;
   height: 30px;
@@ -354,11 +354,11 @@ dialog[open]::backdrop {
   transition: all 1s ease-in-out;
 }
 
-#completed-pages-check:not(:checked)::before {
+#completed-pages-check.not-checked::before {
   background-color: #d60303;
 }
 
-#completed-pages-check:checked:before {
+#completed-pages-check.checked::before {
   background-color: #cf4c00;
   left: 55%;
 }
