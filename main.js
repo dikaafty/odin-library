@@ -283,6 +283,19 @@ function handleCompletedPagesInputInvalid() {
   }
 }
 
+function changeCompletedPagesCheckState() {
+  const totalPagesConverted = Number(totalPagesInput.value);
+  const completedPagesConverted = Number(completedPagesInput.value);
+
+  if(completedPagesConverted === totalPagesConverted) {
+    completedPagesCheck.classList.add("checked");
+    completedPagesCheck.classList.remove("not-checked");
+  } else {
+    completedPagesCheck.classList.add("not-checked");
+    completedPagesCheck.classList.remove("checked");
+  }
+}
+
 
 // Events
 user.addEventListener("click", handleInfoToggle);
