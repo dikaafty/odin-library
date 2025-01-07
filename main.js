@@ -325,6 +325,7 @@ cancelBtn.addEventListener("click", (e) => {
 
   resetDialogLabels();
   resetDialogInputs();
+  resetCompletedPagesCheckState();
 
   dialog.close();
 });
