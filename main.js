@@ -17,6 +17,7 @@ const titleInput = document.getElementById("title");
 const authorInput = document.getElementById("author");
 const totalPagesInput = document.getElementById("total-pages");
 const completedPagesInput = document.getElementById("completed-pages");
+const completedPagesCheck = document.getElementById("completed-pages-check");
 
 
 // State
