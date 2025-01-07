@@ -323,7 +323,8 @@ dialog[open]::backdrop {
   margin-right: 30%;
 }
 
-#completed-pages-check.not-checked {
+#completed-pages-check.not-checked,
+#completed-pages-check.checked {
   appearance: none;
   width: 80px;
   height: 40px;
