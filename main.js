@@ -213,6 +213,11 @@ function manipulateStats() {
   countCompletedBook();
 }
 
+function hasNumber(myString) {
+  return /\d/.test(myString);
+}
+
+
 // Events
 user.addEventListener("click", handleInfoToggle);
 
