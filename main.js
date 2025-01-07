@@ -67,6 +67,7 @@ function resetDialogLabels() {
   totalPagesLabel.textContent = "Total Pages";
   completedPagesLabel.textContent = "Completed Pages";
   document.querySelectorAll("dialog label").forEach((label) => {
+    if(!(label.classList.contains("exception")))
     label.style.color = "#f0f0f0b3";
     label.style.fontSize = "1.3rem";
   });
