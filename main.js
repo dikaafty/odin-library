@@ -339,5 +339,9 @@ confirmBtn.addEventListener("click", (e) => {
 });
 
 authorInput.addEventListener("keyup", handleAuthorInputInvalid);
-totalPagesInput.addEventListener("keyup", handleTotalPagesInputInvalid);
+totalPagesInput.addEventListener("keyup", () => {
+  handleTotalPagesInputInvalid();
+  changeCompletedPagesCheckState();
+});
+
 completedPagesInput.addEventListener("keyup", handleCompletedPagesInputInvalid);
