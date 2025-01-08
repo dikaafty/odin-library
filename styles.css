@@ -471,6 +471,12 @@ form {
   }
 }
 
+@media (max-width: 420px) {
+  .input ~ label {
+    font-size: 0.7rem;
+  }
+}
+
 @media (max-height: 500px) {
   input:focus ~ label,
   .input:focus:not(:placeholder-shown) ~ label,
