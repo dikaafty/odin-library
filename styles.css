@@ -257,6 +257,14 @@ dialog[open]::backdrop {
   animation: backdrop-fade-in 400ms ease-in forwards;
 }
 
+form {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .dialog-title {
   height: 70px;
   background-color: #943600;
