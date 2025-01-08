@@ -258,7 +258,7 @@ function handleTotalPagesInputInvalid() {
     totalPagesLabel.textContent = "Total pages must not contain a string";
     totalPagesLabel.style.color = "red";
   } else if(totalPagesConverted < 1 || totalPagesConverted > 999999) {
-    totalPagesLabel.textContent = "Total pages must contain a number between 1 and 999999";
+    totalPagesLabel.textContent = "Total pages must a number between 1 and 999999";
     totalPagesLabel.style.color = "red";
   } else {
     totalPagesLabel.textContent = "Total Pages";
@@ -275,7 +275,7 @@ function handleCompletedPagesInputInvalid() {
     completedPagesLabel.style.color = "red";
     completedPagesCheck.style.left = "70%";
   } else if(completedPagesConverted < 1 || completedPagesConverted > 999999) {
-    completedPagesLabel.textContent = "Completed pages must contain a number between 1 and 999999";
+    completedPagesLabel.textContent = "Must contain a number between 1 and 999999";
     completedPagesLabel.style.color = "red";
     completedPagesCheck.style.left = "82%";
   } else if(completedPagesConverted > totalPagesConverted) {
