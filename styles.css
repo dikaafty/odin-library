@@ -464,6 +464,13 @@ form {
   }
 }
 
+@media (max-width: 635px) {
+  main {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
+
 @media (max-height: 500px) {
   input:focus ~ label,
   .input:focus:not(:placeholder-shown) ~ label,
