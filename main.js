@@ -32,6 +32,12 @@ let myLibrary = [
     author: "J.R.R. Tolkien",
     pages: 450,
     completed: 450
+  },
+  {
+    title: "WILD CARD",
+    author: "Rensuke Kunigami",
+    pages: 99,
+    completed: 99
   }
 ];
 
