@@ -451,6 +451,13 @@ form {
   }
 }
 
+@media (max-width: 955px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
 @media (max-width: 640px) {
   .input ~ label {
     font-size: 0.9rem;
