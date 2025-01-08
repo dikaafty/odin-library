@@ -439,7 +439,11 @@ dialog[open]::backdrop {
 
 /* Media Queries Area */
 
-
+@media (max-width: 640px) {
+  .input ~ label {
+    font-size: 0.9rem;
+  }
+}
 
 /* Media Queries Area */
 
