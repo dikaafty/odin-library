@@ -265,8 +265,8 @@ function handleCompletedPagesInputInvalid() {
   if(isNaN(completedPagesConverted)) {
     completedPagesLabel.textContent = "Completed pages must not contain a string";
     completedPagesLabel.style.color = "red";
-  } else if(completedPagesConverted < 1 || completedPagesConverted > 999999) {
-    completedPagesLabel.textContent = "Must contain a number between 1 and 999999";
+  } else if(completedPagesConverted < 0 || completedPagesConverted > 999999) {
+    completedPagesLabel.textContent = "Must contain a number between 0 and 999999";
     completedPagesLabel.style.color = "red";
   } else if(completedPagesConverted > totalPagesConverted) {
     completedPagesLabel.textContent = "Completed pages must be less than total pages";
