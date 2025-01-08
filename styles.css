@@ -318,11 +318,6 @@ dialog[open]::backdrop {
   color: #cf4c00;
 }
 
-.completed-pages-container input {
-  width: 50%;
-  margin-right: 30%;
-}
-
 .dialog-btns {
   margin-top: 13vh;
 
