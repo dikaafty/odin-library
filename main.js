@@ -274,18 +274,22 @@ function handleCompletedPagesInputInvalid() {
     completedPagesLabel.textContent = "Completed pages must not contain a string";
     completedPagesLabel.style.color = "red";
     completedPagesCheck.style.left = "70%";
+    completedPagesCheck.style.top = "25px";
   } else if(completedPagesConverted < 1 || completedPagesConverted > 999999) {
     completedPagesLabel.textContent = "Must contain a number between 1 and 999999";
     completedPagesLabel.style.color = "red";
-    completedPagesCheck.style.left = "82%";
+    completedPagesCheck.style.left = "91.5%";
+    completedPagesCheck.style.top = "20px";
   } else if(completedPagesConverted > totalPagesConverted) {
     completedPagesLabel.textContent = "Completed pages must be less than total pages";
     completedPagesLabel.style.color = "red";
     completedPagesCheck.style.left = "70%";
+    completedPagesCheck.style.top = "25px";
   } else {
     completedPagesLabel.textContent = "Completed Pages";
     completedPagesLabel.style.color = "#cf4c00";
     completedPagesCheck.style.left = "70%";
+    completedPagesCheck.style.top = "13px";
   }
 }
 
