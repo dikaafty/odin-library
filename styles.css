@@ -318,8 +318,6 @@ dialog[open]::backdrop {
 }
 
 .dialog-btns {
-  margin-top: 13vh;
-
   display: flex;
   justify-content: center;
 }
