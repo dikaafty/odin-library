@@ -450,6 +450,14 @@ form {
   }
 }
 
+@media (max-height: 500px) {
+  input:focus ~ label,
+  .input:focus:not(:placeholder-shown) ~ label,
+  .input:valid ~ label {
+    visibility: hidden;
+}
+}
+
 /* Media Queries Area */
 
 /* Keyframes Area */
