@@ -17,7 +17,6 @@ const titleInput = document.getElementById("title");
 const authorInput = document.getElementById("author");
 const totalPagesInput = document.getElementById("total-pages");
 const completedPagesInput = document.getElementById("completed-pages");
-const completedPagesCheck = document.getElementById("completed-pages-check");
 
 
 // State
@@ -71,12 +70,6 @@ function resetDialogLabels() {
     label.style.color = "#f0f0f0b3";
     label.style.fontSize = "1.3rem";
   });
-}
-
-function resetCompletedPagesCheckState() {
-  completedPagesCheck.classList.add("not-checked");
-  completedPagesCheck.classList.remove("checked");
-  completedPagesCheck.style.left = "70%";
 }
 
 function addBookToLibrary() {
@@ -273,23 +266,15 @@ function handleCompletedPagesInputInvalid() {
   if(isNaN(completedPagesConverted)) {
     completedPagesLabel.textContent = "Completed pages must not contain a string";
     completedPagesLabel.style.color = "red";
-    completedPagesCheck.style.left = "70%";
-    completedPagesCheck.style.top = "25px";
   } else if(completedPagesConverted < 1 || completedPagesConverted > 999999) {
     completedPagesLabel.textContent = "Must contain a number between 1 and 999999";
     completedPagesLabel.style.color = "red";
-    completedPagesCheck.style.left = "91.5%";
-    completedPagesCheck.style.top = "20px";
   } else if(completedPagesConverted > totalPagesConverted) {
     completedPagesLabel.textContent = "Completed pages must be less than total pages";
     completedPagesLabel.style.color = "red";
-    completedPagesCheck.style.left = "70%";
-    completedPagesCheck.style.top = "25px";
   } else {
     completedPagesLabel.textContent = "Completed Pages";
     completedPagesLabel.style.color = "#cf4c00";
-    completedPagesCheck.style.left = "70%";
-    completedPagesCheck.style.top = "13px";
   }
 }
 
@@ -300,11 +285,7 @@ function changeCompletedPagesCheckState() {
   if(completedPagesConverted === totalPagesConverted &&
      completedPagesConverted > 0 && totalPagesConverted > 0 &&
      completedPagesConverted <= 999999 && totalPagesConverted <= 999999) {
-    completedPagesCheck.classList.add("checked");
-    completedPagesCheck.classList.remove("not-checked");
   } else {
-    completedPagesCheck.classList.add("not-checked");
-    completedPagesCheck.classList.remove("checked");
   }
 }
 
@@ -321,7 +302,6 @@ cancelBtn.addEventListener("click", (e) => {
 
   resetDialogLabels();
   resetDialogInputs();
-  resetCompletedPagesCheckState();
 
   dialog.close();
 });
@@ -339,7 +319,6 @@ confirmBtn.addEventListener("click", (e) => {
       manipulateStats();
       resetDialogLabels();
       resetDialogInputs();
-      resetCompletedPagesCheckState();
 
       dialog.close();
   }

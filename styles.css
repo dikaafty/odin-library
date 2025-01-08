@@ -323,47 +323,6 @@ dialog[open]::backdrop {
   margin-right: 30%;
 }
 
-#completed-pages-check.not-checked,
-#completed-pages-check.checked {
-  appearance: none;
-  width: 80px;
-  height: 40px;
-  background-color: rgba(44, 44, 44, 0.8);
-  border: 2px solid #d60303;
-  border-radius: 50px;
-  cursor: grab;
-  position: absolute;
-  top: 13px;
-  left: 70%;
-  transform: translateX(-50%);
-  transition: all 1s ease-in-out;
-}
-
-#completed-pages-check.checked {
-  border: 2px solid #cf4c00;
-}
-
-#completed-pages-check::before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
-  transition: all 1s ease-in-out;
-}
-
-#completed-pages-check.not-checked::before {
-  background-color: #d60303;
-}
-
-#completed-pages-check.checked::before {
-  background-color: #cf4c00;
-  left: 55%;
-}
-
 .dialog-btns {
   margin-top: 13vh;
 
