@@ -47,11 +47,13 @@ bookNumber.textContent = myLibrary.length;
 
 
 // Constructor
-function Book(title, author, pages, completed) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.completed = completed;
+class Book {
+  constructor(title, author, pages, completed) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.completed = completed;
+  }
 }
 
 
